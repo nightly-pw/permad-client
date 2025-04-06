@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta content="what" property="og:title">
+        <meta content="" property="og:description">
+        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/ui.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One" />
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">      
+        <script src="/assets/particles.js"></script>  
+    </head>
+    <body>
+        <div id="renderer-div" class="screen-div" hidden>
+            <canvas id="render-canvas" oncontextmenu="return false;"></canvas>
+            <input hidden id="chatbox" placeholder="Type your message">
+            <div hidden id="chatlist"></div>
+        </div>
+        <div id="ui" class="screen-div"></div><!--Root for the webpage, implemented in React-->
+        <div id="notification-div" class="tclr-white notification-div-hidden">
+            <h5 id="notification-header" class="w-500">Header</h2>
+            <h5 id="notification-text" class="w-200">Wow, what a cool description!</h3>
+        </div>
+    </body>
+</html>
