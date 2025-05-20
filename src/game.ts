@@ -51,6 +51,7 @@ export class Game extends GameBase {
     }
 
     protected onLoad(): void {
+        // busy waiting
         this.network = new NetworkClient();
     }
 

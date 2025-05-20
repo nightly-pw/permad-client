@@ -146,8 +146,9 @@ export class MpNetHandler {
     }
 
     private handleWorldInfo(buf: ByteBuf) {
+        console.log('handle world info')
         //Reset all previous world info (if any)
-        if (Game.gameInstance.world == null)
+        //if (Game.gameInstance.world == null)
             Game.gameInstance.world = new World();
         Game.gameInstance.world.entities = [];
 

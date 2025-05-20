@@ -33,7 +33,9 @@ export class NetworkClient {
     private onMessage(ev: MessageEvent<any>) {
         let data: Uint8Array = ev.data;
         let buf = new ByteBuf(new Uint8Array(data));
-        let isBulk = buf.readBool();
+        let pid = buf.readInt();
+        this.mpNetHandler.onMessage(buf, pid);
+        /*let isBulk = buf.readBool();
         if (isBulk) {
             let packetCount = buf.readInt();
 
@@ -48,6 +50,6 @@ export class NetworkClient {
         } else {
             let pid = buf.readInt();
             this.mpNetHandler.onMessage(buf, pid);
-        }
+        }*/
     }
 }
